@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_storage"
+            android:icon="@drawable/ic_baseline_phone_android_24"
+            android:title="Shared storage" />
+    </group>
+
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dcim"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="DCIM" />
+        <item
+            android:id="@+id/download"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="Download" />
+        <item
+            android:id="@+id/movies"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="Movies" />
+        <item
+            android:id="@+id/music"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="Music" />
+        <item
+            android:id="@+id/picture"
+            android:icon="@drawable/ic_baseline_folder_24"
+            android:title="Picture" />
+    </group>
+
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/fileListFragment"
+            android:icon="@drawable/ic_baseline_view_list_24"
+            android:title="List View" />
+        <item
+            android:id="@+id/treeMapFragment"
+            android:icon="@drawable/ic_baseline_view_compact_24"
+            android:title="Tree Map" />
+
+    </group>
+
+    <group
+        android:id="@+id/g4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/snifferFragment"
+            android:icon="@drawable/ic_baseline_file_copy_24"
+            android:title="Duplicate Files" />
+
+    </group>
+</menu>

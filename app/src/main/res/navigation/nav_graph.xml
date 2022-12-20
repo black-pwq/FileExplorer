@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/dcim"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0/DCIM"
+            app:argType="string" />
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/download"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0/Download"
+            app:argType="string" />
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/music"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0/Music"
+            app:argType="string" />
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/picture"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0/Pictures"
+            app:argType="string" />
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0/Movies"
+            app:argType="string" />
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileListFragment"
+        android:name="com.example.explorerx.ui.plain.FileListFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_file_list">
+        <action
+            android:id="@+id/intoSubdir"
+            app:destination="@id/fileListFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0"
+            app:argType="string" />
+        <action
+            android:id="@+id/view_in_tree_map"
+            app:destination="@id/treeMapFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/detectDupFiles"
+            app:destination="@id/snifferFragment">
+            <argument
+                android:name="FileUriString"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/delete"
+            app:destination="@id/deleteConfirmDialog" >
+            <argument
+                android:name="FileName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.explorerx.ui.main.MainFragment"
+        android:label="ExplorerX"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/toList"
+            app:destination="@id/fileListFragment" />
+        <action
+            android:id="@+id/toDup"
+            app:destination="@id/snifferFragment" />
+        <action
+            android:id="@+id/toTree"
+            app:destination="@id/treeMapFragment" />
+        <action
+            android:id="@+id/toPictures"
+            app:destination="@id/picture" />
+        <action
+            android:id="@+id/toMovies"
+            app:destination="@id/movies" />
+        <action
+            android:id="@+id/toMusic"
+            app:destination="@id/music" />
+        <action
+            android:id="@+id/toDownload"
+            app:destination="@id/download" />
+    </fragment>
+    <fragment
+        android:id="@+id/treeMapFragment"
+        android:name="com.example.explorerx.ui.treechart.TreeMapFragment"
+        android:label="Tree Map"
+        tools:layout="@layout/fragment_tree_page">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0"
+            app:argType="string" />
+        <action
+            android:id="@+id/cacheQuery"
+            app:destination="@id/cacheQueryDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/cacheQueryDialog"
+        android:name="com.example.explorerx.ui.dialog.CacheQueryDialog"
+        android:label="CacheQueryDialog" />
+    <fragment
+        android:id="@+id/snifferFragment"
+        android:name="com.example.explorerx.ui.sniffer.SnifferFragment"
+        android:label="SnifferFragment"
+        tools:layout="@layout/fragment_file_list">
+        <argument
+            android:name="FileUriString"
+            android:defaultValue="file:///storage/emulated/0"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/deleteConfirmDialog"
+        android:name="com.example.explorerx.ui.dialog.DeleteConfirmDialog"
+        android:label="DeleteConfirmDialog" >
+        <argument
+            android:name="FileName"
+            app:argType="string" />
+    </dialog>
+</navigation>

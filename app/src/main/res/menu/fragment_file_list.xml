@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/backup"-->
+<!--        android:icon="@drawable/ic_backup"-->
+<!--        android:title="Backup"-->
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/view_in_tree_map"
+        android:title="View in tree map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/duplicate_files"
+        android:title="Duplicate files"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExplorerX</string>
+    <string name="alert_dialog_need_permission_title">Need permission of managing files</string>
+    <string name="alert_dialog_need_permission_msg">App will exit if this permission is not granted</string>
+    <string name="alert_dialog_need_permission_pbtn">To Grant</string>
+    <string name="alert_dialog_need_permission_nbtn">Exit</string>
+    <string name="err_delete_file">An Error occurred when trying to delete this file or directory.</string>
+    <string name="tree_map">Tree Map</string>
+    <string name="list_view">List View</string>
+</resources>
